@@ -308,6 +308,20 @@ a:focus {
   -o-transition: none;
   transition: none;
 }
+
+#press {display: none;}
+			.block {
+				background: #fff;
+				border: 1px solid black;
+				text-align: center;
+				width: 200px;
+				z-index: 1;
+			}
+			.spoiler > .block {display: none; position: absolute;}
+			.spoiler > input:checked + .block {display: block;}
+			label {color: blue; font-size: 1.5em;}
+			label:hover {cursor: pointer; text-decoration: underline;}
+
 #pricing .box {
   background-color: #f9f9f9;
 }
